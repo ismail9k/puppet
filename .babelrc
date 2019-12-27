@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": { "node": "current" },
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"],
+  "env": {
+    "test": {
+      "presets": [
+        ["@babel/env", { "targets": { "node": "current" } }]
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.controller__modes
+	display-flex(center, space-around)
+	margin-bottom: 10px
+	.mode__button
+		display-flex(center, center)
+		transition-all(0.4s)
+		width: 40px
+		height: 40px
+		border-radius: 40px
+		background-color: alpha($dark, 50%)
+		box-shadow: 0 5px 5px -.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%)
+		color: $dark
+		cursor: pointer
+		&:hover
+		&:focus
+			background-color: $green
+			box-shadow: 0 7px 7px -.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%)
+			transform: scale(1.1)
+		&.active
+			background-color: $green
+
+
+.range-slider
+	display-flex(center, center)
+	position: relative
+	padding: 10px 20px
+	height: 20px
+	.range-slider__value
+		display-flex(center, center)
+		transition-all(0.2s)
+		position: absolute
+		top: 0
+		left: -50px
+		width: 30px
+		height: 30px
+		border-radius: 30px 0 0 30px
+		background-color: $green
+		color: $dark
+		font-weight: bold
+		font-size: 14px
+		line-height: 20px
+		transform: scale(0)
+		&:before
+			position: absolute
+			right: -10px
+			z-index: -1
+			display: block
+			width: 21px
+			height: 21px
+			border-radius: 0
+			background-color: $green
+			content: ""
+			transform: rotate(45deg)
+
+
+	&:hover
+	&:focus
+		.range-slider__value
+			opacity: 1
+			transform: scale(1)

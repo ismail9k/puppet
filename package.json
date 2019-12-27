@@ -1,0 +1,52 @@
+{
+  "name": "Puppet.svg",
+  "version": "0.0.3",
+  "description": "Fun project to control an svg character",
+  "scripts": {
+    "lint": "eslint src/**/*.js --fix",
+    "build": "NODE_ENV=production node scripts/build",
+    "dev": "node scripts/watcher",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "main": "./dist/js/puppet.svg.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ismail9k/Puppet.svg.git"
+  },
+  "keywords": [
+    "svg",
+    "puppet",
+    "controller"
+  ],
+  "author": "Abdelrahman Ismail <dev@ismail9k.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ismail9k/Puppet.svg/issues"
+  },
+  "homepage": "https://github.com/ismail9k/Puppet.svg#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-eslint": "^10.0.3",
+    "browser-sync": "^2.26.7",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "filesize": "^4.1.2",
+    "gzip-size": "^5.0.0",
+    "jest": "^24.5.0",
+    "path": "^0.12.7",
+    "prettier": "^1.16.4",
+    "rollup": "^1.7.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.2",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-resolve": "0.0.1-predev.1",
+    "uglify-js": "^3.5.2"
+  }
+}
