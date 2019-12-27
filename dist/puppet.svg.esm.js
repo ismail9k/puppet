@@ -471,5 +471,3 @@ var index = {
   Draggable,
   Timeline
 };
-
-export default index;
